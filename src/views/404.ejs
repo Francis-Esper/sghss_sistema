@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHGSS | Página Não Encontrada</title>
+    <link rel="stylesheet" href="/css/menu_styles.css" />
+    <link rel="stylesheet" href="/css/main_styles.css" />
+    <link rel="stylesheet" href="/css/footer_styles.css" />
+    <link rel="stylesheet" href="/css/login_styles.css" />
+  </head>
+  <body>
+    <!-- Importação do menu lateral -->
+    <%- include('./partials/menu') %>
+
+    <header>
+      <h1>Eita... parece que a página que você pediu não existe...</h1>
+    </header>
+
+    <main style="color: white;">
+      <p style="margin: 0 auto; text-align: center;">A página <strong><%= url %></strong> não foi encontrada.</p>
+      <a href="/" style="display:block; text-align: center; color: white; text-decoration: underline; ">Voltar para a página inicial</a>
+    </main>
+
+    <footer class="footer">
+      <div class="container-footer">
+        <p>&copy; 2025 Gestão de Pacientes. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Francisco Esperandio</p>
+      </div>
+    </footer>
+    <script src="/js/menu_scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGHSS | Cadastro de Pacientes</title>
+    <link rel="stylesheet" href="/css/menu_styles.css" />
+    <link rel="stylesheet" href="/css/main_styles.css" />
+    <link rel="stylesheet" href="/css/footer_styles.css" />
+    <link rel="stylesheet" href="/css/login_styles.css" />
+    <link rel="stylesheet" href="/css/pacientes_styles.css" />
+  </head>
+  <body>
+
+    <!-- Importação do menu lateral -->
+    <%- include('../partials/menu') %>
+
+    <header>
+      <h1>Gestão de Pacientes</h1>
+
+      <!-- Botão Cadastro -->
+      <button
+        id="cadastrarPaciente"
+        onclick="document.getElementById('formCadPaciente').style.display = 'block'"
+      >
+        Cadastrar Paciente
+      </button>
+
+      <!-- Formulário de cadastro -->
+      <form id="formCadPaciente" action="/pacientes" method="POST">
+        <h3>Cadastrar Paciente</h3>
+
+        <!-- Botão fechar -->
+        <button
+          type="button"
+          class="close-button"
+          onclick="document.getElementById('formCadPaciente').style.display = 'none'"
+        >
+          ✖
+        </button>
+
+        <div class="container-form">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="data_nascimento">Data de Nasc:</label>
+          <input
+            type="date"
+            id="data_nascimento"
+            name="data_nascimento"
+            required
+          />
+
+          <label for="genero">Gênero:</label>
+          <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+          </select>
+
+          <label for="telefone_contato">Telefone:</label>
+          <input type="text" id="telefone_contato" name="telefone_contato" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <button type="submit">Salvar</button>
+      </form>
+    </header>
+
+    <div class="content">
+      <!-- Campo de pesquisa -->
+      <div class="search-container">
+        <form id="searchForm" action="/pacientes" method="GET">
+          <input
+            type="text"
+            id="search"
+            name="nome"
+            placeholder="Digite o nome do paciente"
+          />
+          <button type="submit">Pesquisar</button>
+        </form>
+      </div>
+
+      <!-- Tabela de pacientes -->
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Data de Nascimento</th>
+            <th>Gênero</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>Criado em</th>
+            <th>Atualizado em</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="pacientesTable">
+          <% if (pacientes.length > 0) { %> <%
+          pacientes.forEach(function(paciente) { %>
+          <tr>
+            <td><%= paciente.id %></td>
+            <td><%= paciente.nome %></td>
+            <td><%= paciente.data_nascimento %></td>
+            <td><%= paciente.genero %></td>
+            <td><%= paciente.telefone_contato %></td>
+            <td><%= paciente.email %></td>
+            <td><%= paciente.criado_em %></td>
+            <td><%= paciente.atualizado_em %></td>
+            <td class="actions">
+              <button onclick="editarPaciente(<%= paciente.id %>)">Editar</button>
+              <button onclick="excluirPaciente(<%= paciente.id %>)">Excluir</button>
+            </td>
+          </tr>
+          <% }); %> <% } else { %>
+          <tr>
+            <td colspan="9">Nenhum paciente encontrado.</td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="footer">
+      <div class="container-footer">
+        <p>&copy; 2025 Gestão de Pacientes. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Francisco Esperandio</p>
+      </div>
+    </footer>
+
+    <script src="/js/menu_scripts.js"></script>
+    <script src="/js/pacientes_scripts.js"></script>
+    <script src="/js/search_scripts.js"></script>
+  </body>
+</html>

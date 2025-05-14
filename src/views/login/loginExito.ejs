@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGHSS | Login Exito</title>
+    <link rel="stylesheet" href="/css/menu_styles.css" />
+    <link rel="stylesheet" href="/css/main_styles.css" />
+    <link rel="stylesheet" href="/css/footer_styles.css" />
+    <link rel="stylesheet" href="/css/login_styles.css" />
+  </head>
+
+  <body data-token="<%= token %>">
+    <!-- Importação do menu lateral -->
+    <%- include('../partials/menu') %>
+
+    <header>
+      <h3>
+        Bem vindo ao SGHSS - Sistema de gestão hospitalar e serviços de saúde
+      </h3>
+    </header>
+
+    <footer class="footer">
+      <div class="container-footer">
+        <p>&copy; 2025 Gestão de Pacientes. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Francisco Esperandio</p>
+      </div>
+    </footer>
+    <script src="/js/menu_scripts.js"></script>
+    <script src="/js/loginExito_scripts.js"></script>
+    <script src="/js/tokens/tokenCadastroPacientes.js"></script>
+  </body>
+</html>

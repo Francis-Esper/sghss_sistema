@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGHSS | Bem vindo</title>
+    <link rel="stylesheet" href="/css/menu_styles.css" />
+    <link rel="stylesheet" href="/css/main_styles.css" />
+    <link rel="stylesheet" href="/css/footer_styles.css" />
+    <link rel="stylesheet" href="/css/login_styles.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+
+    <header>
+      <h3>
+        Bem vindo ao SGHSS - Sistema de gestão hospitalar e serviços de saúde
+      </h3>
+    </header>
+
+    <div class="content">
+      <form action="/login" method="POST" class="login">
+        <div>
+          <label for="user">Usuário:</label>
+          <input type="text" id="user" name="nome_usuario" placeholder="Informe seu login"required />
+        </div>
+        <div>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="senha"  placeholder="Digite sua senha" required/>
+        </div>
+        <button id="btnLogin" type="submit">Entrar</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="container-footer">
+        <p>&copy; 2025 Gestão de Pacientes. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Francisco Esperandio</p>
+      </div>
+    </footer>
+
+    <script src="/js/menu_scripts.js"></script>
+    <script src="/js/login_scripts.js"></script>
+    <script src="/js/index_scripts.js"></script>
+  </body>
+</html>
