@@ -22,7 +22,7 @@ O SGHSS é um sistema desenvolvido para gerenciar e monitorar atividades relacio
     ```
 2. Acesse o diretório do projeto:
     ```bash
-    cd sghss
+    cd sghss_sistema
     ```
 
 3. Instale o Node v22.14.0 e NPM v11.3.0 ou superior
