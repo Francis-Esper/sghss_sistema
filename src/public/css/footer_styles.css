@@ -1,0 +1,10 @@
+.footer {
+    grid-area: footer;
+    background-color: #0a2949;
+    max-height: 100%;
+    color: #ffffff;
+    text-align: center;
+  }
+  .container-footer{
+    margin-top: 30px;
+  }

@@ -1,0 +1,226 @@
+
+/* Estilo para o botão "Cadastrar Paciente" */
+button#cadastrarPaciente {
+  background-color: #ff8c00; /* Azul padrão */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button#cadastrarPaciente:hover {
+  background-color: #b35100; /* Azul mais escuro no hover */
+}
+
+/* Estilo para o formulário */
+form {
+display: none;
+position: relative;
+text-align: center;
+padding: 15px;
+border-radius: 5px;
+background-color: #02182d;
+max-width: 800px;
+margin: 20px auto;
+}
+
+.container-form{
+display: flex;
+background-color: red;
+flex-wrap: wrap;
+text-align: center;
+}
+
+.container-form label{
+  font-size: 16px;
+}
+
+.container-form #nome{
+max-width: 700px;  
+}
+
+
+.container-form #data_nascimento{
+max-width: 150px;  
+}
+
+.container-form #genero{
+max-width: 150px;  
+}
+
+.container-form #telefone_contato{
+max-width: 200px;  
+}
+
+.container-form #email{
+max-width: 350px;  
+}
+
+form label{
+padding: 10px;
+}
+
+form .close-button {
+position: absolute;
+top: 10px;
+right: 10px;
+background-color: #f44336;
+color: white;
+border: none;
+border-radius: 100%;
+width: 30px;
+height: 30px;
+font-size: 16px;
+cursor: pointer;
+}
+
+form .close-button:hover {
+background-color: #d32f2f;
+}
+
+/* Estilo para os rótulos (labels) */
+form label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+/* Estilo para os campos de entrada (inputs) */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form select {
+width: 100%;
+padding: 8px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+/* Estilo para o botão de envio */
+form button[type="submit"] {
+background-color: #4caf50;
+color: white;
+padding: 10px 15px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+background-color: #45a049;
+}
+
+.search-container{
+  display: flex;
+  justify-content: center;
+  
+}
+
+/* Centraliza o formulário de pesquisa e adiciona padding */
+form#searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  border-radius: 5px;
+  background-color: #02182d;
+}
+
+/* Estilo para os elementos dentro do formulário */
+form#searchForm input[type="text"] {
+  padding: 10px;
+  margin: 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 350px;
+}
+
+form#searchForm button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+form#searchForm button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #e9dfdf;
+  text-align: center;    
+}
+
+/* Estilo para o cabeçalho da tabela */
+table thead th {
+  border: 1px solid #000000;
+  background-color: #0a2949;
+  color: #fff;
+  max-width: 100%;
+  padding: 10px;
+}
+
+table thead, tbody tr{
+  border: 1px solid #000000;
+}
+/* Estilo para as células da tabela */
+table tbody td {
+  padding: 2px;
+ 
+}
+
+/* Estilo para as linhas da tabela */
+table tbody tr:nth-child(even) {
+  background-color: #e9dfdf;
+}
+
+table tbody tr:hover {
+  background-color: #d6d6d6;
+  cursor: pointer;
+}
+
+/* Estilo para as ações (botões) */
+table tbody td.actions button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+table tbody td.actions button:first-child {
+  background-color: #4caf50;
+  color: white;
+}
+
+table tbody td.actions button:first-child:hover {
+  background-color: #45a049;
+}
+
+table tbody td.actions button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+table tbody td.actions button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+.actions button {
+margin-right: 5px;
+}

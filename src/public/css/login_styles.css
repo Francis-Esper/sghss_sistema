@@ -1,0 +1,38 @@
+/* Centraliza o formulário de login */
+.login {
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  align-items: center; /* Centraliza os elementos horizontalmente */
+  justify-content: center; /* Centraliza os elementos verticalmente */
+  padding: 20px;
+  background-color: #02182d; /* Fundo claro para destacar o formulário */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar o formulário */
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Estilo para os campos de entrada */
+.login input[type="text"],
+.login input[type="password"] {
+  width: 100%;
+  max-width: 300px; /* Limita a largura máxima */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 4px; /* Bordas arredondadas */
+  box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+/* Estilo para os rótulos */
+.login div label {
+  margin: 5px;
+  font-size: 14px; /* Tamanho da fonte */
+  color: #ffffff; /* Cor do texto */
+}
+
+/* Estilo para os contêineres dos campos */
+.login div {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}

@@ -1,0 +1,75 @@
+/* Estilo para o menu lateral */
+.sidebar {
+  grid-area: sidebar;
+  width: 250px;
+  background-color: #02182d;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  border-radius: 10px;
+  border: none;
+  position: relative;  
+}
+
+#toggleSidebar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: fixed;
+  left: 230px;
+}
+
+#toggleSidebar:hover {
+  background-color: #0056b3;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+.menu-list li h3 {
+  padding: 0;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.menu-list > li {
+  margin-bottom: 10px;
+}
+
+.menu-list > li > a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-list > li > a:hover {
+  color: #007bff;
+}
+
+.menu-list ul {
+  list-style: none;
+  padding-left: 20px;
+
+}
+
+.menu-list ul li{
+  margin: 20px 0;
+}
+
+.menu-list ul li a {
+  text-decoration: none;
+  font-size: 10px;
+  color: #f9efef;
+  background: #0e46af;
+  padding: 9px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.menu-list ul li a:hover {
+  background: #022668;
+}

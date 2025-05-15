@@ -1,0 +1,31 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #03203d;
+  display:  grid;
+  grid-template-areas: "header header"
+                       "sidebar content"
+                       "footer footer";
+  grid-template-columns: 0.5fr 3fr;
+  grid-template-rows: auto 1fr auto;
+  transition: grid-template-columns 0.3s ease; /* Transição suave */
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+header {
+  grid-area: header;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 24px;
+  background-color: #03203d;
+  color: #ffffff;
+}
+
+
+.content{
+  grid-area: content;
+  background-color: #03203d;
+}
