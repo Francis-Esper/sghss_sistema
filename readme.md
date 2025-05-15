@@ -18,7 +18,7 @@ O SGHSS é um sistema desenvolvido para gerenciar e monitorar atividades relacio
 ## Como Executar
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/sghss.git
+    git clone https://github.com/Francis-Esper/sghss_sistema.git
     ```
 2. Acesse o diretório do projeto:
     ```bash
