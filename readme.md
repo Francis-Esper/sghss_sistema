@@ -38,10 +38,13 @@ O SGHSS é um sistema desenvolvido para gerenciar e monitorar atividades relacio
     criarTabelas.sql
 
 7. Crie na raiz do projeto o arquivo .env, exemplo:
-    DB_URI={} // string de conexão com o banco de dados: postgresql://usuarioDB:senhaDB@host:porta/database
-    PORT={} // porta do servidor node
-    JWT_SECRET={} //Senha para geração do JSON WEB TOKEN
-    NODE_ENV={} // Exemplo: development
+    DB_URI={} `string de conexão com o banco de dados: postgresql://usuarioDB:senhaDB@host:porta/database`
+
+    PORT={} `(Porta do servidor node)`
+
+    JWT_SECRET={} `Senha para geração do JSON WEB TOKEN`
+
+    NODE_ENV={} `Exemplo: development`
  
 
 8. Inicie o servidor node:
